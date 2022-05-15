@@ -7,3 +7,18 @@
     </div>
   <% end %>
 </div>
+
+
+<h1>My Posts</h1>
+ 
+<ul>
+  <% for post in @posts %>
+    <li>
+      <a href="/posts/<%= post["id"]%>"><%= post["body"] %></a>
+    </li>
+  <% end %>
+</ul>
+
+<p>
+<a href="post/new"> Create a new post </a>
+</p>
